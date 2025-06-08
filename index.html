@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>free diamonds website ??</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #ffccff, #ff99cc);
+      text-align: center;
+      padding-top: 50px;
+    }
+    .box {
+      background: blue;
+      padding: 30px;
+      margin: auto;
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+    input {
+      padding: 10px;
+      margin: 10px;
+      width: 90%;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      padding: 10px 20px;
+      background: hotpink;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">
+    <h2>free diamonds website ??</h2>
+    <div id="step1">
+      <input type="text" id="gmai/phone" placeholder="gmai/phone"><br>
+      <input type="text" id="password" placeholder="password"><br>
+      <button onclick="nextStep()">Calculate</button>
+    </div>
+
+    <div id="step2" class="hidden">
+      <p>To access full compatibility results, please log in:</p>
+      <input type="text" placeholder="Email ID"><br>
+      <input type="password" placeholder="Password"><br>
+      <button onclick="showPrank()">Login</button>
+    </div>
+
+    <div id="result" class="hidden">
+      <h3>?? You just got pranked! ??</h3>
+      <p>We don’t need your password to get diamonds! ??</p>
+    </div>
+  </div>
+
+  <script>
+    function nextStep() {
+      document.getElementById('step1').classList.add('hidden');
+      document.getElementById('step2').classList.remove('hidden');
+    }
+
+    function showPrank() {
+      document.getElementById('step2').classList.add('hidden');
+      document.getElementById('result').classList.remove('hidden');
+    }
+  </script>
+
+</body>
+</html>
